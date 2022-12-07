@@ -40,4 +40,5 @@ public class ClienteREST {
     public void excluir(@RequestBody Cliente cliente) {
         repositorio.delete(cliente);
     }
+
 }
