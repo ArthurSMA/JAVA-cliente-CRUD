@@ -1,4 +1,4 @@
-package com.projeto.restapi.entidades;
+package com.projeto.restapi.models;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

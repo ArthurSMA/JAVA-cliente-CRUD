@@ -1,7 +1,7 @@
 package com.projeto.restapi;
 
-import com.projeto.restapi.database.RepositorioCliente;
-import com.projeto.restapi.entidades.Cliente;
+import com.projeto.restapi.models.Cliente;
+import com.projeto.restapi.repositories.RepositorioCliente;
 
 import java.util.List;
 
