@@ -3,6 +3,8 @@ package com.projeto.restapi.controller;
 import com.projeto.restapi.models.Cliente;
 import com.projeto.restapi.repositories.RepositorioCliente;
 
+import jakarta.validation.Valid;
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,12 +28,12 @@ public class ClienteController {
     }
 
     @PostMapping
-    public void salvar(@RequestBody Cliente cliente) {
+    public void salvar(@RequestBody @Valid Cliente cliente) {
         repositorio.save(cliente);
     }
 
     @PutMapping
-    public void alterar(@RequestBody Cliente cliente) {
+    public void alterar(@RequestBody @Valid Cliente cliente) {
         if (cliente.getId() > 0)
             repositorio.save(cliente);
     }
