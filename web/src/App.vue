@@ -17,7 +17,7 @@
         <label>Data de nascimento</label>
         <input type="date" placeholder="dd-mm-yyyy" v-model="cliente.dataNascimento">
         <label>Cpf</label>
-        <input type="text" placeholder="000.000.000-00" v-model="cliente.cpf">
+        <input type="tel" placeholder="00000000000" maxlength="11" v-model="cliente.cpf">
         <label>E-mail</label>
         <input type="email" placeholder="email@gamil.com" v-model="cliente.email">
         <button class="waves-effect waves-light btn-small">Salvar<i class="material-icons left">save</i></button>
